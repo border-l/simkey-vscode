@@ -1,0 +1,22 @@
+{
+    "comments": {
+      "blockComment": ["# ", " #"]
+    },
+    "brackets": [
+      ["{", "}"],
+      ["[", "]"]
+    ],
+    "autoClosingPairs": [
+      { "open": "[", "close": "]" },
+      { "open": "{", "close": "}"},
+      { "open": "# ", "close": " #", "notIn": ["string"] }
+    ],
+    "surroundingPairs": [
+      ["{", "}"],
+      ["[", "]"]
+    ],
+    "indentationRules": {
+      "increaseIndentPattern": "<(SETTINGS|VECTORS|MODES|SWITCHES|FUNCS|MACRO|IMPORTS)>\\s*$",
+      "decreaseIndentPattern": "^\\s*\\}"
+    }
+  }

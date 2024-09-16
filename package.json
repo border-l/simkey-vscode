@@ -1,0 +1,51 @@
+{
+  "name": "simkey",
+  "displayName": "Simkey Highlighting",
+  "description": "Simkey syntax highlighting",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.92.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "files.associations": {
+    "*.simkey": "simkey"
+  },
+  "contributes": {
+    "iconThemes": [
+      {
+          "label": "Simkey",
+          "id": "simkey",
+          "path": "./assets/icon.json"
+      }
+    ],
+    "languages": [{
+      "id": "simkey",
+      "aliases": ["Simple Key", "simkey"],
+      "extensions": [".simkey"],
+      "configuration": "./language-configuration.json",
+      "icon": {
+        "light": "./assets/whatthefuck.webp",
+        "dark": "./assets/whatthefuck.webp"
+      }
+    },
+    {
+      "id": "keyc",
+      "aliases": ["Key Compiled", "keyc"],
+      "extensions": [".keyc"],
+      "icon": {
+        "light": "./assets/logo.png",
+        "dark": "./assets/logo.png"
+      }
+    }],
+    "grammars": [{
+      "language": "simkey",
+      "scopeName": "source.simkey",
+      "path": "./syntaxes/simkey.tmLanguage.json"
+    }],
+    "icons": {
+
+    }
+  }
+}
