@@ -8,7 +8,7 @@
         },
         {
             "name": "keyword.control",
-            "match": "\\@(if|elseif|else|repeat)"
+            "match": "\\@(if|elseif|else|repeat|goto|for|setIndex|setBool|set)"
         },
         {
             "name": "entity.name.function",

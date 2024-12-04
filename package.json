@@ -1,6 +1,7 @@
 {
   "name": "simkey",
-  "displayName": "Simkey Highlighting",
+  "displayName": "Simkey",
+  "publisher": "Border-L",
   "description": "Simkey syntax highlighting",
   "version": "0.0.1",
   "engines": {
@@ -13,21 +14,14 @@
     "*.simkey": "simkey"
   },
   "contributes": {
-    "iconThemes": [
-      {
-          "label": "Simkey",
-          "id": "simkey",
-          "path": "./assets/icon.json"
-      }
-    ],
     "languages": [{
       "id": "simkey",
       "aliases": ["Simple Key", "simkey"],
       "extensions": [".simkey"],
       "configuration": "./language-configuration.json",
       "icon": {
-        "light": "./assets/whatthefuck.webp",
-        "dark": "./assets/whatthefuck.webp"
+        "light": "./assets/main_logo.png",
+        "dark": "./assets/main_logo.png"
       }
     },
     {
@@ -35,17 +29,14 @@
       "aliases": ["Key Compiled", "keyc"],
       "extensions": [".keyc"],
       "icon": {
-        "light": "./assets/logo.png",
-        "dark": "./assets/logo.png"
+        "light": "./assets/main_logo_keyc.png",
+        "dark": "./assets/main_logo_keyc.png"
       }
     }],
     "grammars": [{
       "language": "simkey",
       "scopeName": "source.simkey",
       "path": "./syntaxes/simkey.tmLanguage.json"
-    }],
-    "icons": {
-
-    }
+    }]
   }
 }
