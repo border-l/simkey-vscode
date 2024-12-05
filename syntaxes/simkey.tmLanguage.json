@@ -3,20 +3,25 @@
     "scopeName": "source.simkey",
     "patterns": [
         {
+            "name": "comment.simkey",
+            "begin": "\\s#\\s",
+            "end": "\\s#\\s"
+        },
+        {
             "name": "entity.name.tag",
-            "match": "<(SETTINGS|VECTORS|MODES|SWITCHES|FUNCS|MACRO|IMPORTS)>\\s"
+            "match": "<(SETTINGS|VECTORS|MODES|SWITCHES|FUNCS|MACRO|IMPORTS)>(?=\\s)"
         },
         {
             "name": "keyword.control",
-            "match": "\\@(if|elseif|else|repeat|goto|for|setIndex|setBool|set)\\s"
+            "match": "\\@(if|elseif|else|repeat|goto|for|setIndex|setBool|set)(?=\\s)"
         },
         {
             "name": "entity.name.function",
-            "match": "\\@[a-zA-Z_]*(\\s|\\[)"
+            "match": "\\@[a-zA-Z_]*(?=\\s|\\[)"
         },
         {
             "name": "keyword.control",
-            "match": "\\$\\$[a-zA-Z_][a-zA-Z0-9_]*\\s"
+            "match": "\\$\\$[a-zA-Z_][a-zA-Z0-9_]*(?=\\s|\\[)"
         },
         {
             "name": "constant.language.simkey",
@@ -28,21 +33,16 @@
         },
         {
             "name": "keyword.type",
-            "match": "(BOOL|STR|NUM|VECTOR|LOOSE)\\s"
+            "match": "(BOOL|STR|NUM|VECTOR|LOOSE)(?=\\s|\\[)"
         },
         {
             "name": "keyword.operator",
-            "match": "(\\s|\\[|\\,)(ON|OFF|=|TRUE|FALSE|OPTIONAL)(\\s|\\]|\\,)"
+            "match": "(?<=\\s|\\[|\\,)(ON|OFF|=|TRUE|FALSE|OPTIONAL)(?=\\s|\\]|\\,)"
         },
         {
             "name": "string.quoted.double.simkey",
             "begin": "\"",
             "end": "\""
-        },
-        {
-            "name": "comment.simkey",
-            "begin": "\\s#\\s",
-            "end": "\\s#\\s"
         }
     ],
     "fileTypes": ["simkey"],
