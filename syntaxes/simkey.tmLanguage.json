@@ -4,23 +4,23 @@
     "patterns": [
         {
             "name": "entity.name.tag",
-            "match": "<(SETTINGS|VECTORS|MODES|SWITCHES|FUNCS|MACRO|IMPORTS)>"
+            "match": "<(SETTINGS|VECTORS|MODES|SWITCHES|FUNCS|MACRO|IMPORTS)>\\s"
         },
         {
             "name": "keyword.control",
-            "match": "\\@(if|elseif|else|repeat|goto|for|setIndex|setBool|set)"
+            "match": "\\@(if|elseif|else|repeat|goto|for|setIndex|setBool|set)\\s"
         },
         {
             "name": "entity.name.function",
-            "match": "\\@[a-zA-Z_]*"
+            "match": "\\@[a-zA-Z_]*(\\s|\\[)"
         },
         {
             "name": "keyword.control",
-            "match": "\\$\\$[a-zA-Z_][a-zA-Z0-9_]*"
+            "match": "\\$\\$[a-zA-Z_][a-zA-Z0-9_]*\\s"
         },
         {
             "name": "constant.language.simkey",
-            "match": "\\$[a-zA-Z0-9_]*"
+            "match": "\\$[a-zA-Z0-9_]*\\b"
         },
         {
             "name": "constant.numeric.simkey",
@@ -28,11 +28,11 @@
         },
         {
             "name": "keyword.type",
-            "match": "(BOOL|STR|NUM|VECTOR|LOOSE)"
+            "match": "(BOOL|STR|NUM|VECTOR|LOOSE)\\s"
         },
         {
             "name": "keyword.operator",
-            "match": "(ON|OFF|=|TRUE|FALSE|OPTIONAL)"
+            "match": "(\\s|\\[|\\,)(ON|OFF|=|TRUE|FALSE|OPTIONAL)(\\s|\\]|\\,)"
         },
         {
             "name": "string.quoted.double.simkey",
@@ -41,11 +41,11 @@
         },
         {
             "name": "comment.simkey",
-            "begin": "# ",
-            "end": " #"
+            "begin": "\\s#\\s",
+            "end": "\\s#\\s"
         }
     ],
     "fileTypes": ["simkey"],
-    "foldingStartMarker": "\\{",
-    "foldingStopMarker": "\\}"
+    "foldingStartMarker": "\\s\\{\\s",
+    "foldingStopMarker": "\\s\\}\\s"
 }
