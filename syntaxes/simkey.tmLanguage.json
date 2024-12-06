@@ -4,8 +4,8 @@
     "patterns": [
         {
             "name": "comment.simkey",
-            "begin": "\\s#\\s",
-            "end": "\\s#\\s"
+            "begin": "(?<=\\s|^)#(?=\\s)",
+            "end": "(?<=\\s)#"
         },
         {
             "name": "entity.name.tag",
