@@ -17,7 +17,7 @@
         },
         {
             "name": "entity.name.function",
-            "match": "\\@[a-zA-Z_]*(?=\\s|\\[)"
+            "match": "\\@[a-zA-Z_0-9]*(?=\\s|\\[)"
         },
         {
             "name": "keyword.control",
@@ -33,7 +33,7 @@
         },
         {
             "name": "keyword.type",
-            "match": "(BOOL|STR|NUM|VECTOR|LOOSE)(?=\\s|\\[)"
+            "match": "(?<=\\s)(BOOL|VECTOR)(?=\\]|\\s|\\,)"
         },
         {
             "name": "keyword.operator",
