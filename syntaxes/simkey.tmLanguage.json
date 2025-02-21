@@ -13,7 +13,7 @@
         },
         {
             "name": "keyword.control",
-            "match": "\\@(if|elseif|else|repeat|goto|for|setIndex|setBool|set)(?=\\s)"
+            "match": "\\@(if|elseif|else|repeat|goto|for|forEach|setIndex|setBool|set)(?=\\s)"
         },
         {
             "name": "entity.name.function",
