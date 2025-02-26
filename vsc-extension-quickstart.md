@@ -1,29 +1,9 @@
-# Welcome to your VS Code Extension
+# Simkey Highlighter
 
-## What's in the folder
+This extension provides a basic highlighter that is mostly accurate for the Simkey language.
 
-* This folder contains all of the files necessary for your extension.
-* `package.json` - this is the manifest file in which you declare your language support and define the location of the grammar file that has been copied into your extension.
-* `syntaxes/simkey.tmLanguage.json` - this is the Text mate grammar file that is used for tokenization.
-* `language-configuration.json` - this is the language configuration, defining the tokens that are used for comments and brackets.
+Simkey is a simple language to write repetitive macros. While there are certainly more powerful options, Simkey strives to make repetitive tasks that don't require active inputs or screen readers exceptionally easy and efficient to automate. 
 
-## Get up and running straight away
+You can press, hold, and release keys, as well as move the cursor and scroll, while controlling the timing and parallelization, in a very concise syntax.
 
-* Make sure the language configuration settings in `language-configuration.json` are accurate.
-* Press `F5` to open a new window with your extension loaded.
-* Create a new file with a file name suffix matching your language.
-* Verify that syntax highlighting works and that the language configuration settings are working.
-
-## Make changes
-
-* You can relaunch the extension from the debug toolbar after making changes to the files listed above.
-* You can also reload (`Ctrl+R` or `Cmd+R` on Mac) the VS Code window with your extension to load your changes.
-
-## Add more language features
-
-* To add features such as IntelliSense, hovers and validators check out the VS Code extenders documentation at https://code.visualstudio.com/docs
-
-## Install your extension
-
-* To start using your extension with Visual Studio Code copy it into the `<user home>/.vscode/extensions` folder and restart Code.
-* To share your extension with the world, read on https://code.visualstudio.com/docs about publishing an extension.
+For more details, and to download the `simkey-app` to compile and run these files, visit [this GitHub repository](https://github.com/border-l/simkey-app).

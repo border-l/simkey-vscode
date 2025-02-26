@@ -1,8 +1,9 @@
 {
-  "name": "simkey",
-  "displayName": "Simkey",
+  "name": "simkey-highlighter",
+  "displayName": "Simkey Highlighter",
   "publisher": "Border-L",
-  "description": "Simkey syntax highlighting",
+  "description": "Simkey highlighting",
+  "repository": "https://github.com/border-l/simkey-vscode",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.92.0"
