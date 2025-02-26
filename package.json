@@ -4,6 +4,7 @@
   "publisher": "Border-L",
   "description": "Simkey highlighting",
   "repository": "https://github.com/border-l/simkey-vscode",
+  "icon": "assets/main_logo.png",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.92.0"
