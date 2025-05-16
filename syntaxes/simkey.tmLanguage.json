@@ -13,15 +13,15 @@
         },
         {
             "name": "keyword.declaration.parameters.simkey",
-            "match": "(takes)(?=\\s)"
+            "match": "(?<=(\\s|^))(takes)(?=\\s)"
         },
         {
             "name": "keyword.control",
-            "match": "(if|elseif|else|repeat|for|loop|with|async|start|end|stop|return|next)(?=\\s)"
+            "match": "(?<=(\\s|^))(if|elseif|else|repeat|for|loop|with|async|start|end|stop|return|next)(?=\\s)"
         },
         {
             "name": "entity.name.function",
-            "match": "\\@[a-zA-Z_0-9]*(?=\\s|\\[)"
+            "match": "(?<=(\\s|^))\\@[^\\s]+(?=\\s|\\[)"
         },
         {
             "name": "keyword.control",
@@ -45,11 +45,23 @@
         },
         {
             "name": "string.quoted.double.simkey",
-            "begin": "(?<=\\s|\\[|\\,)\"",
-            "end": "\"(?=\\s|\\]|\\,)"
+            "begin": "(?<=\\s|\\[|\\,|^)\"",
+            "end": "\"(?=\\s|\\]|\\,|$)",
+            "patterns": [
+                {
+                    "match": "\\\\[\\\\\"bfnrt]",
+                    "name": "constant.character.escape.simkey"
+                },
+                {
+                    "match": "\\\\.",
+                    "name": "invalid.illegal.unrecognized-escape.simkey"
+                }
+            ]
         }
     ],
-    "fileTypes": ["simkey"],
+    "fileTypes": [
+        "simkey"
+    ],
     "foldingStartMarker": "\\s\\{\\s",
     "foldingStopMarker": "\\s\\}\\s"
 }
