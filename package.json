@@ -5,7 +5,7 @@
   "description": "Simkey highlighting",
   "repository": "https://github.com/border-l/simkey-vscode",
   "icon": "assets/main_logo.png",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "engines": {
     "vscode": "^1.92.0"
   },
@@ -13,26 +13,18 @@
     "Programming Languages"
   ],
   "files.associations": {
-    "*.simkey": "simkey"
+    "*.simkey": "simkey",
+    "*.skey": "simkey"
   },
   "contributes": {
     "languages": [{
       "id": "simkey",
       "aliases": ["Simple Key", "simkey"],
-      "extensions": [".simkey"],
+      "extensions": [".simkey", ".skey"],
       "configuration": "./language-configuration.json",
       "icon": {
         "light": "./assets/main_logo.png",
         "dark": "./assets/main_logo.png"
-      }
-    },
-    {
-      "id": "keyc",
-      "aliases": ["Key Compiled", "keyc"],
-      "extensions": [".keyc"],
-      "icon": {
-        "light": "./assets/main_logo_keyc.png",
-        "dark": "./assets/main_logo_keyc.png"
       }
     }],
     "grammars": [{
